@@ -24,7 +24,7 @@ function sorting() {
 }
 
 function searching() {
-    var s = document.getElementById("searchDiv").value;
+    var s = document.getElementById("s1").value;
     var found = 0;
     var j;
 
@@ -34,6 +34,8 @@ function searching() {
         }
     }
 
-    document.getElementById("searchDiv").innerHTML = "name found" + found + "time/s";
-    console.log("found name" + found + "time/s");
+    console.log(found);
+
+    console.log("found name " + found + " time/s");
+    document.getElementById("searchP").innerHTML = "found name " + found + " time/s";
 }
